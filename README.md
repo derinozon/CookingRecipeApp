@@ -1,6 +1,6 @@
 # Cooking Recipe App
 
-Recipe management app powered by Kotlin, developed for a University project with @OmarChafik42 and @void-1409.
+Recipe management app powered by Kotlin, developed for a University project with [@OmarChafik42](https://github.com/OmarChafik42) and [@void-1409](https://github.com/void-1409).
 
 Hosted for archiving purposes, not functional without a backend with neccesary API endpoints.
 
