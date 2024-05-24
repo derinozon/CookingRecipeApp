@@ -13,3 +13,7 @@ Hosted for archiving purposes, not functional without a backend with neccesary A
     + Paste your api adress and the port of the backend (8080 in our case) in the apiUrl variable
 - Disable your firewall or add an exception to ensure the connection between server and client will establish
 - Configure an emulator or connect your own android device and run the project
+
+## Showcase
+
+https://github.com/derinozon/CookingRecipeApp/assets/44300720/c8bba696-5d70-46a6-a5f8-a93d77a4e505
