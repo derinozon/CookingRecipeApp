@@ -1,0 +1,44 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.agileavengers.cooking_recipes_android.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_filterDialogFragment"
+            app:destination="@id/filterDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.agileavengers.cooking_recipes_android.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.agileavengers.cooking_recipes_android.ui.categories.CategoriesFragment"
+        android:label="@string/menu_categories"
+        tools:layout="@layout/fragment_categories">
+        <action
+            android:id="@+id/action_categories_to_filterDialogFragment"
+            app:destination="@id/filterDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.agileavengers.cooking_recipes_android.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    
+    <dialog
+        android:id="@+id/filterDialogFragment"
+        android:name="com.agileavengers.cooking_recipes_android.ui.filter.FilterDialogFragment"
+        android:label="Filter" />
+
+</navigation>

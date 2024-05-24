@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="325dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_food"
+        tools:ignore="UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="317dp"
+        android:layout_height="480dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/get_started_backgroud" />
+
+    <TextView
+        android:id="@+id/tvCookTogether"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Let's cook Together"
+        android:textColor="@color/text_primary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/inter"
+        android:text="Join our community to cook \n better and healthy food!"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/button_background"
+        android:text="@string/get_started"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:typeface="monospace"
+        android:onClick="GetStarted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
